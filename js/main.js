@@ -57,7 +57,7 @@ elForm.addEventListener("submit", function (e) {
     var eLcontactOutputName = document.createElement("p");
     var eLcontactOutputInfo = document.createElement("p");
     var eLcontactOutputPhoneNumber = document.createElement("a");
-
+    elContactInputPhoneNumber.setAttribute("href", "#")
     //ADDING AND GIVING TEXT CONTECT TO OUTPUT
     eLcontactOutputName.textContent = contactListArr[i].name;
     eLcontactOutputInfo.textContent = contactListArr[i].info;
@@ -73,3 +73,5 @@ elForm.addEventListener("submit", function (e) {
   // elContactList.appendChild();
 
 });
+
+// document.getElementById("myAnchor").setAttribute("href", "https://www.w3schools.com");
