@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS starter || Bootstap 5</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,24 +12,28 @@
 
   <div class="container-made container-sm py-5">
 
-    <h1 class="text-center mb-5">TOPIC</h1>
+    <h1 class="text-center mb-5 bg-dark text-white py-4">Contact Book</h1>
 
-    <form class="js-form" action="https://echo.htmlacademy.ru" method="GET">
+    <form class="js-form" action="https://echo.htmlacademy.ru" method="POST">
        <div class="box row">
 
-        <div class="col-lg-4">
-          <input class="js-input form-control col-lg-4 d-block mb-2" type="text" required>
+        <div class="col-lg-6">
+          <h2 class="h5">New contact form</h2>
+          <input class="d-block js-input-name form-control col-lg-4 d-block mb-3" type="text" placeholder="Name" required>
+          <input class="d-block js-input-info form-control col-lg-4 d-block mb-3" type="text" placeholder="Relationship"
+            required>
+          <input class="d-block js-input-phone-number form-control col-lg-4 d-block mb-2" type="text" placeholder="Phone" required>
+
+          <button class="btn btn-primary" type="submit">add</button>
         </div>
 
-         <div class="col-lg-4">
-           <button class="js-submit btn-danger form-control col-lg-4" type="submit">Submit</button>
-         </div>
-
-        <div class="col-lg-4">
-          <output class="output-wrapper form-control col-lg-4 d-block mb-2">
-            <span>Result: </span>
-            <span class="js-output"></span>
-          </output>
+        <div class="col-lg-6 js-contact-list">
+        <h2 class="h5">New contact form</h2>
+          <div class="contact-item">
+            <p class="contact-item__name"></p>
+            <p class="contact-item__info"></p>
+            <p class="contact-item__phone"></p>
+          </div>
         </div>
 
 
